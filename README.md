@@ -10,6 +10,6 @@ Every round will give you bonus points.
 **How to run it?** 
 just run the Ass66.jar file
 
-<img src="https://your-image-url.type" width="100" height="100">
+<img src="https://your-image-url.type" width="50%" height="50%">
 
 enjoy :)
