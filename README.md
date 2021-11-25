@@ -10,6 +10,6 @@ Every round will give you bonus points.
 **How to run it?** 
 just run the Ass66.jar file
 
-![name](https://github.com/omerabargel8/Arknoid-Game/blob/master/src/gameover.png?raw=true)(https://github.com/omerabargel8/Arknoid-Game/blob/master/src/gameover.png?raw=true)
+[![name](https://github.com/omerabargel8/Arknoid-Game/blob/master/src/gameover.png?raw=true)(https://github.com/omerabargel8/Arknoid-Game/blob/master/src/level1.png?raw=true)]
 
 enjoy :)
