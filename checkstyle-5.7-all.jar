@@ -1,0 +1,40 @@
+import biuoop.GUI;
+import biuoop.DrawSurface;
+
+import java.awt.*;
+import java.util.Random;
+
+public class MultipleBouncingBallsAnimation {
+
+    public static void main (String[] args) {
+        GUI gui = new GUI("title", 800, 600);
+        biuoop.Sleeper sleeper = new biuoop.Sleeper();
+        Ball[] balls = new Ball[args.length];
+        int x, y;
+        Random rand = new Random();
+        for (int i = 0; i < args.length; i++) {
+            x = rand.nextInt(800);
+            y = rand.nextInt(600);
+            int ballSize = Integer.parseInt(args[i]);
+            double speed = 10;
+            balls[i] = new Ball(x,y,ballSize, Color.pink);
+            double angle = rand.nextInt(180);
+            if(ballSize < 50) {
+                speed = (100 / ballSize) * rand.nextDouble();
+            }
+            Velocity v = Velocity.fromAngleAndSpeed(angle, speed);
+            balls[i].setVelocity(v);
+            balls[i].setStartPoint(0,0);
+            balls[i].setEndPoint(800,600);
+        }
+        while (true) {
+            DrawSurface d = gui.getDrawSurface();
+            for (int j = 0; j < balls.length; j++) {
+                balls[j].moveOneStep();
+                balls[j].drawOn(d);
+            }
+            gui.show(d);
+            sleeper.sleepFor(50);  // wait for 50 milliseconds.
+        }
+    }
+}
