@@ -1,4 +1,4 @@
-# Arknoid-Game
+# Arkanoid-Game
 Written in Java as part of a first-year OOP course at Bar-Ilan University.
 
 There are four levels in the game.
